@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de Calificaciones | Gestión Administrativa</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+
+    header {
+      background: #173b63;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      font-size: 25px;
+      margin: 12px 0;
+    }
+
+    header p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    main {
+      max-width: 480px;
+      margin: 35px auto;
+      padding: 0 15px;
+    }
+
+    .tarjeta {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 14px;
+      box-shadow: 0 5px 22px #00000012;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 21px;
+      margin-top: 0;
+    }
+
+    .descripcion {
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    label {
+      display: block;
+      margin: 22px 0 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      background: #173b63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background: #94a3b8;
+      cursor: not-allowed;
+    }
+
+    .aviso {
+      margin-top: 22px;
+      padding: 15px;
+      background: #f8fafc;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GESTIÓN ADMINISTRATIVA</h1>
+    <p>
+      Licenciatura en Educación Preescolar<br>
+      Séptimo semestre · Ciclo 2026-2<br>
+      Benemérita y Centenaria Escuela Normal del Estado de Sonora
+    </p>
+  </header>
+
+  <main>
+    <div class="tarjeta">
+      <h2>Consulta de calificaciones</h2>
+
+      <p class="descripcion">
+        Consulta tus resultados académicos
+        correspondientes al Parcial 1 y Parcial 2.
+      </p>
+
+      <form>
+        <label for="matricula">Matrícula</label>
+        <input
+          id="matricula"
+          type="text"
+          inputmode="numeric"
+          maxlength="12"
+          placeholder="Ingresa tu matrícula"
+          autocomplete="off"
+          required
+        >
+
+        <label for="pin">PIN personal</label>
+        <input
+          id="pin"
+          type="password"
+          placeholder="Ingresa tu PIN"
+          autocomplete="off"
+          required
+        >
+
+        <button type="button" disabled>
+          Consultar mis calificaciones
+        </button>
+      </form>
+
+      <div class="aviso">
+        El sistema de consulta se encuentra
+        en configuración.<br>
+        Próximamente podrás visualizar tus
+        calificaciones finales de ambos parciales.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Gestión Administrativa · 2026<br>
+    Consulta individual de resultados académicos
+  </footer>
+
+</body>
+</html>
